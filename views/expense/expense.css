@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: auto;
+}
+
+body.light{
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+}
+
+body.dark{
+  background-color: #1f1f1f;
+  color:white;
+}
+
+.dark input{
+  color: white;
+
+}
+
+.light input{
+  color: black;
+
+}
+
+
+
+div#nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+#logout , #premium ,#download{
+    
+    height: 22px;
+    border: 1px solid #8e44ad;
+    background: #2691d9;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+#logout , #premium , #download{
+  margin: 15px;
+    width:100px;
+}
+#logout{
+  justify-content: flex-end;
+}
+
+#left.dark{
+  width:72%;
+  float: left;
+}
+
+#expense-div.light{
+    
+  margin: 15px auto;
+  /* padding: 10px; */
+  width: 700px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+
+#expense-div.dark{
+  margin: 15px 20px;
+  width: 95%;
+  background: #474747;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+
+
+#expense-div .list{
+  padding: 10px 0;
+  border-bottom: 2px solid #adadad;
+  margin: 10px 30px;
+}
+
+.expense-info{
+    width:85%;
+    display: inline-block;
+}
+
+.btns{
+  text-align: center;
+  width:10%;
+  display: inline-block;
+}
+
+.btns button{
+    padding:2px;
+    height: 22px;
+    border: 1px solid;
+    background: #2691d9;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    width:100%;
+    display: inline-block;
+}
+
+
+/* .center{
+    margin: 25px auto 55px;
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 10px;
+  } */
+
+  .center.dark{
+    margin: 25px auto 55px;
+    
+    border-radius: 10px;
+  }
+
+  .center.light{
+    margin: 25px auto 55px;
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+  .center.dark{
+    margin: 15px 20px;
+    width: 95%;
+    color:white;
+    background: #474747;
+    box-shadow: 10px 10px 15px rgba(238, 238, 238, 0.05);
+  }
+
+  .center h1{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid silver;
+  }
+  .center form{
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  center form.dark{
+    color:white ;
+  }
+
+  form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 10px 0;
+  }
+  .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 12px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  txt_field input[type=text].dark{
+    color:white;
+  }
+  
+  
+  input[type="submit"]{
+    margin:0px auto 15px;
+    width: 45%;
+    height: 30px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    
+  }
+  input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+  }
+  
+  #right.dark{
+    margin:   15px 0px;
+    float: left;
+    width : 26% ;
+    background: #474747;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    display: none;
+    padding: 10px;
+  }
+
+  .leaderboard{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    border-bottom:2px solid #adadad ;
+    padding:5px ;
+  }
+  .leaderboardList p{
+    text-align: center;
+  }
+
+  .leaderboardList{
+    list-style-type: none;
+    display: flex;
+    margin: 12px 0px;
+  }
+
+  .leaderboardList .sno{
+    width:10%;
+  }
+
+  .leaderboardList .name{
+    width:44%;
+  }
+
+  .leaderboardList #user{
+    cursor: pointer;
+  }
+  
+
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #pagination{
+    
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#pagination button{
+    margin:1rem;
+    padding:3px;
+    border-radius: 10%;
+    border: 1px solid #2691d9;
+    background-color: white;
+}
+
+#pagination button.active{
+ height: 2.2rem;
+ background-color: #2691d9;
+ color:white;
+ padding:5px;
+
+}
+
+  .bottom{
+    padding: 20px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(0,0,0,0.05);
+  }

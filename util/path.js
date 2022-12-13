@@ -1,0 +1,1 @@
+module.exports = path.dirname(require.main.filename)
